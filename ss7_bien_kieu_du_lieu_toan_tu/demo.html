@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="diemLy" placeholder="nhập điểm lý">Điểm Lý<br>
+<input id="diemhoa" placeholder="nhập điểm hóa">Điểm Hóa<br>
+<input id="diemtoan" placeholder="nhập điểm toán">Điểm Toán<br>
+<button onclick="tinhDiem()">Tổng và Điểm trung bình</button>
+</body>
+<script>
+
+ function tinhDiem() {
+    let diemVatLy = parseInt(document.getElementById("diemLy").value);
+    let diemhoahoc= parseInt( document.getElementById("diemhoa").value);
+    let diemtoanhoc= parseInt( document.getElementById("diemtoan").value);
+    let tong= diemVatLy+diemhoahoc+diemtoanhoc;
+    let dtb= (diemVatLy+diemhoahoc+diemtoanhoc)/3;
+     alert(tong  + "và"  + dtb)
+ }
+
+</script>
+</html>

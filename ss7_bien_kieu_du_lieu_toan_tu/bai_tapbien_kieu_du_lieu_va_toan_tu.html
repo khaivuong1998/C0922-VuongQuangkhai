@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Điểm Trung Bình</h1>
+<input type="number" id="vatly" placeholder="nhập điểm"><strong>điểm vật lý</strong><br>
+<input type="number" id="hoahoc" placeholder="nhập điểm"><strong>điểm hóa học</strong><br>
+<input type="number" id="sinhhoc" placeholder="nhập điểm"><strong>điểm sinh học</strong><br>
+<button onclick="kiemTra()">điểm trung bình và tổng </button>
+<div id="tong"></div>
+<div id="dtb"></div>
+</body>
+</html>
+<script>
+   function kiemTra()  {
+       let diemvatly=  document.getElementById("vatly").value;
+       let diemhoahoc= document.getElementById("hoahoc").value;
+       let  diemsinhhoc= document.getElementById("sinhhoc").value;
+       let dtb= (parseFloat(diemvatly) + parseFloat(diemhoahoc) + parseFloat(diemsinhhoc))/3
+       document.getElementById('dtb').innerHTML=dtb
+       let tong= (parseFloat(diemvatly) + parseFloat(diemhoahoc) + parseFloat(diemsinhhoc))
+       document.getElementById('tong').innerHTML=tong
+   }
+</script>
