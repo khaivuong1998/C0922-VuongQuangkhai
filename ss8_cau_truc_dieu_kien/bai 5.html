@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Xếp hạng học lực</h1>
+Điểm bài kiểm tra<input id="diem1"><br>
+Điểm thi giữa kỳ <input id="diem2"><br>
+Điểm thi cuối kỳ <input id="diem3"><br>
+<button onclick="ySegay()">Click</button>
+<p id="giaTri"></p>
+</body>
+<script>
+    function ySegay() {
+        let diem1= parseFloat(document.getElementById('diem1').value);
+        let diem2= parseFloat(document.getElementById('diem2').value);
+        let diem3= parseFloat(document.getElementById('diem3').value);
+        let ketQua= (diem1 + diem2*2 + diem3*3)/6;
+        if (ketQua>=8) {
+            document.getElementById('giaTri').innerText= 'Học lực giỏi';
+        } else if (ketQua>=7) {
+            document.getElementById('giaTri').innerText= 'Học lực khá';
+        } else if (ketQua>=5) {
+            document.getElementById('giaTri').innerText= 'Học lực TB';
+        } else if (ketQua>=3.5) {
+            document.getElementById('giaTri').innerText= 'Học lực yếu';
+        } else {
+            document.getElementById('giaTri').innerText= 'Học lực kém';
+        }
+    }
+</script>
+</html>

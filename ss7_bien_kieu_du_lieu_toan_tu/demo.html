@@ -9,6 +9,7 @@
 <input id="diemhoa" placeholder="nhập điểm hóa">Điểm Hóa<br>
 <input id="diemtoan" placeholder="nhập điểm toán">Điểm Toán<br>
 <button onclick="tinhDiem()">Tổng và Điểm trung bình</button>
+<!--<p id="ketQua"></p>-->
 </body>
 <script>
 
@@ -18,8 +19,9 @@
     let diemtoanhoc= parseInt( document.getElementById("diemtoan").value);
     let tong= diemVatLy+diemhoahoc+diemtoanhoc;
     let dtb= (diemVatLy+diemhoahoc+diemtoanhoc)/3;
-     alert(tong  + "và"  + dtb)
- }
+     alert(tong  + "và"  + dtb)}
+ //     document.getElementById("ketQua").innerText =tong + "và" + dtb;
+ // }
 
 </script>
 </html>

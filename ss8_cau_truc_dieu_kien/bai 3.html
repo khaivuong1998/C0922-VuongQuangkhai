@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Số nguyên<input id="so" placeholder="nhập"><br>
+<button onclick="kiemTra()">Kiểm Tra</button>
+<p id="giaTri"></p>
+</body>
+<script>
+    function kiemTra() {
+        let so= document.getElementById("so").value;
+        if (so>0) {
+            document.getElementById("giaTri").innerText= "Là số nguyên dương";
+        } else if (so==0) {
+            document.getElementById("giaTri").innerText= "không xác định";
+        } else {
+            document.getElementById("giaTri").innerText= "Là số nguyên âm";
+        }
+    }
+</script>
+</html>
