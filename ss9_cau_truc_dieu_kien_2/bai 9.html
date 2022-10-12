@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Cạnh a<input id="a"><br>
+Cạnh b<input id="b"><br>
+Cạnh c<input id="c"><br>
+<button onclick="kiemTra()">Click</button>
+<p id="giaTri"></p>
+</body>
+<script>
+    // let a= prompt("nhập cạnh thứ 1");
+    // let b= prompt("nhập cạnh thứ 2");
+    // let c= prompt("nhập cạnh thứ 3");
+    // if (a>0 && b>0 && c>0) {
+    //     alert('là cạnh của tam giác')
+    // }
+    // && (a + b >c) && (a + c >b) && (b + c >a)
+    function kiemTra() {
+        let a = parseInt(document.getElementById('a').value);
+        let b = parseInt(document.getElementById('b').value);
+        let c = parseInt(document.getElementById('c').value);
+        if ( (a > 0 && b > 0 && c > 0) && ((a + b) >c) && (a + c >b) && (b + c >a) ) {
+            document.getElementById('giaTri').innerText = "Là cạnh của 1 tam giác";
+        } else {
+            document.getElementById('giaTri').innerText = "Không phải cạnh của 1 tam giác";
+            }
+    }
+</script>
+</html>
