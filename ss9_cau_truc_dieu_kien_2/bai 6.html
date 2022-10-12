@@ -6,6 +6,23 @@
 </head>
 <body>
 <h1>Giải phương trình bậc 1</h1>
-<input id="">
+a<input id="a"><br>
+b<input id="b"><br>
+<button onclick="kiemTra()">Nghiệm</button>
+<p id="giaTri"></p>
 </body>
+<script>
+    function kiemTra() {
+        let a= document.getElementById('a').value;
+        let b= document.getElementById('b').value;
+        let ax = -b ;
+        if (a == 0&&b == 0) {
+            document.getElementById('giaTri').innerText= "Phương trình có vô số nghiệm";
+        } else if (a == 0&&b != 0) {
+            document.getElementById('giaTri').innerText= "Phương trình vô nghiệm";
+        } else {
+            document.getElementById('giaTri').innerText= "Phương trình có 1 nghiệm duy nhất x = " + -b + '/' + a;
+        }
+    }
+</script>
 </html>
