@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Cách tính tiền điện</h2><br>
+<h4>
+    Bậc 1 cho kWh từ 0 - 50: 1.678 đồng/kWh<br>
+    Bậc 2 cho kWh từ 51 - 100: 1.734 đồng/kWh<br>
+    Bậc 3 cho kWh từ 101 - 200: 2.014 đồng/kWh<br>
+    Bậc 4 cho kWh từ 201 - 300: 2.536 đồng/kWh<br>
+    Bậc 5 cho kWh từ 301 - 400: 2.834 đồng/kWh<br>
+    Bậc 6 cho kWh từ 401 trở lên: 2.927 đồng/kWh<br>
+</h4>
+Số chữ điện<input id="a"><br>
+<button onclick="giaTri()">Kiểm tra</button>
+<p id="giaTri"></p>
+</body>
+<script>
+    function giaTri() {
+        let a= parseFloat(document.getElementById('a').value);
+        if (a>0 && a<50) {
+            document.getElementById('giaTri').innerText=
+        }
+    }
+</script>
+</html>
