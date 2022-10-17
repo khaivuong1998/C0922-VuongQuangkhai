@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrNumber= [];
+    for (let i = 0; i< 10; i++) {
+        arrNumber[i]= prompt("Nhập chuỗi số nguyên" + 1);
+    }
+    let V= prompt("Nhập số nguyên bất kỳ");
+    let kiemTra = false;
+    for (i = 0; i < 10; i++) {
+        if (V == arrNumber[i]) {
+            document.write(V + " is in the array ");
+            kiemTra = true;
+            break
+        }
+    }
+    if ( kiemTra == false) {
+        document.write( V + " is not in the array ");
+    }
+</script>
+</body>
+</html>

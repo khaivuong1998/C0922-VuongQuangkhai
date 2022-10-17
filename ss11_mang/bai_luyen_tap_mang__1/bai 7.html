@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrNumber= [];
+    for (let i = 0; i < 10; i++) {
+        arrNumber[i]= prompt("Nhập chuỗi số nguyên " + i);
+    }
+    let V= prompt("Nhập số nguyên bất kỳ");
+    for (let i = 0; i < 10; i++) {
+        if (V == arrNumber[i]) {
+            arrNumber.splice(i,1);
+            arrNumber.push(0);
+        } document.write(arrNumber[i] + ',');
+    }
+</script>
+</body>
+</html>

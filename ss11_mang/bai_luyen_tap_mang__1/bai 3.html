@@ -7,21 +7,18 @@
 <body>
 <script>
 
-    let numbers = [-2,-3,0,3,6,100,29,33];
+    let numbers = [68, 8, 12, 50, 2, 26, 33, 6, 81, 42];
     let max = numbers[0];
-    let index = 0;
     let avgNumbers = 0;
     let avg;
     for (let i = 0;i < numbers.length;i++){
         if (numbers[i] > max){
             max = numbers[i];
-            index = i;
         }
         avgNumbers += numbers[i];
         avg = avgNumbers/(numbers.length);
     }
-    document.write("Giá trị lớn nhất là "+max+" tại vị trí "+index);
-    document.write("<br>");
+    document.write("Giá trị lớn nhất là "+max + '<br>');
     document.write('Trung bình của các phần tử trong mảng là '+avg);
 </script>
 </body>

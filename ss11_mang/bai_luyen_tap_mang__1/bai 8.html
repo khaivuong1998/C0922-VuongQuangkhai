@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrNumber= [];
+    for (let i = 0; i < 10; i++) {
+        arrNumber[i]= prompt(" Nhập chuỗi số nguyên " + i);
+        arrNumber.sort(function (a,b) {
+            return a -  b
+        })
+        document.write(arrNumber[i] + ',' + '<br>');
+        arrNumber.sort(function (a,b) {
+            return b - a
+        })
+        document.write('<br>' + arrNumber[i] + ',');
+    }
+
+</script>
+</body>
+</html>

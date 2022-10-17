@@ -7,15 +7,15 @@
 <body>
 <script>
 
-    let arrInteger = [1, 8, 12, 50, 7, 21, 25, 6, 4, 10];
-    let count = 0;
+    let arrInteger = [1, 19, 12, 36, 7, 26, 44, 9, 4, 10];
+    let a = 0;
     for (let i = 0; i < arrInteger.length; i++) {
         if (arrInteger[i] >= 10) {
-            document.write(arrInteger[i] +"<br>");
-            count += 1;
+            document.write(arrInteger[i] + ',');
+            a += 1;
         }
     }
-    document.write("Tổng số nguyên lớn hơn hoặc bằng 10 : " + count);
+    document.write("<br>" + "Tổng số nguyên lớn hơn hoặc bằng 10 là " + a);
 </script>
 </body>
 </html>

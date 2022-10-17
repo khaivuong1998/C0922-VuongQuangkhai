@@ -7,14 +7,14 @@
 <body>
 <script>
 
-    let arrInteger = [1, -8, 12, -50, 7, -21, 25, -6, -4, 10];
+    let arrInteger = [-12, -8, 12, -63, 7, -21, 17, -6, -4, 43];
     let max = arrInteger[0];
     let count = 0;
-    for (let i = 1; i < arrInteger.length; i++) {
+    for (let i = 0; i < arrInteger.length; i++) {
         if (arrInteger[i] < 0)
             count++;
     }
-    alert("Total negative integer: " + count);
+    document.write("Tổng số nguyên âm là : " + count);
 </script>
 </body>
 </html>

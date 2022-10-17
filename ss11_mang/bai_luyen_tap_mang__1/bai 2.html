@@ -7,16 +7,16 @@
 <body>
 <script>
 
-    let arrInteger = [1, 8, 12, 50, 7, 21, 25, 6, 4, 10];
+    let arrInteger = [68, 8, 12, 50, 2, 26, 33, 6, 81, 42];
     let max = arrInteger[0];
-    let index_max = 0;
-    for (let i = 1; i < arrInteger.length; i++) {
+    let location_max = 0;
+    for (let i = 0; i < arrInteger.length; i++) {
         if (arrInteger[i] > max) {
             max = arrInteger[i];
-            index_max = arrInteger.indexOf(arrInteger[i]);
+            location_max = arrInteger.indexOf(arrInteger[i]);
         }
     }
-    document.write("Max is " + max + " at the index " + index_max);
+    document.write(" Số lớn nhất là " + max + "<br>" + " Vị trí " + location_max);
 </script>
 </body>
 </html>
