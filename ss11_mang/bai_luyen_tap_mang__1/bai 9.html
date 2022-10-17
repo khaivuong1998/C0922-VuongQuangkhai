@@ -5,6 +5,22 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    let arrNumber1= [];
+    let arrNumber2= [];
+    let arrNumber3= [];
+    for (let i=0; i<10;i++) {
+        arrNumber1[i]= +prompt("Nhập số nguyên " + i);
+    }
+    document.write("Mảng 1: " + arrNumber1 + '<br>');
 
+    for (let j=0; j<10; j++) {
+        arrNumber2[j]= +prompt("Nhập số nguyên " + j);
+    }
+    document.write("Mảng 2: " + arrNumber2 + "<br>");
+
+    arrNumber3.push(arrNumber1,arrNumber2);
+    document.write("Mảng 3: " + arrNumber3)
+</script>
 </body>
 </html>

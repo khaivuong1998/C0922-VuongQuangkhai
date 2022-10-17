@@ -8,17 +8,13 @@
 <script>
     let arrNumber= [];
     for (let i = 0; i < 10; i++) {
-        arrNumber[i]= prompt(" Nhập chuỗi số nguyên " + i);
-        arrNumber.sort(function (a,b) {
-            return a -  b
-        })
-        document.write(arrNumber[i] + ',' + '<br>');
-        arrNumber.sort(function (a,b) {
-            return b - a
-        })
-        document.write('<br>' + arrNumber[i] + ',');
+        arrNumber[i]= +prompt(" Nhập số nguyên " + i);
     }
-
+    document.write(arrNumber);
+    arrNumber.sort(function (a,b) {
+        return b - a
+    })
+    document.write('<br>' + arrNumber);
 </script>
 </body>
 </html>
