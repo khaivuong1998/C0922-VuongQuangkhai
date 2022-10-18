@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrayOfStudentC09 = prompt('nhập số sv');
+
+    let count =1
+    if (arrayOfStudentC09.length<1){
+        document.write('nhập lại')
+    }else {
+        for (i=0; i<arrayOfStudentC09.length; i++){
+            if (arrayOfStudentC09[i]===' '){
+                count ++
+            }
+        }
+    }document.write('số từ là :'+count)
+</script>
+</body>
+</html>
