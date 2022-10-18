@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Nhập vào:</h1>
+<input type="text" id="keyWord">
+<button onclick="tuDien()" >Dịch</button>
+<p id="key"></p>
+<script>
+    let a=['orange','hello','guava','mango'];
+    let b=['cam','xin chào','ổi','xoài'];
+    let c= document.getElementById("keyWord");
+    function tuDien() {
+        for(let i=0;i<a.length;i++){
+            if(a[i]===document.getElementById("keyWord").value){
+                document.getElementById("key").innerText=b[i];
+            }
+        }
+    }
+</script>
+</body>
+</html>

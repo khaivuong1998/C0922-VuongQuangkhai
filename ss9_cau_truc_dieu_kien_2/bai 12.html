@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let r = parseInt(prompt("Lãi xuất"))
+    let P = parseInt(prompt("Số tiền gốc"))
+    let t = parseInt(prompt("Số năm mượn "))
+    let n = parseInt(prompt("Số tiền lãi kép mỗi năm"))
+    let S = n*t;
+    let A = P * (1+r/n)^S;
+    document.write('Lãi xuất kép là :' + A);
+</script>
+</body>
+</html>
