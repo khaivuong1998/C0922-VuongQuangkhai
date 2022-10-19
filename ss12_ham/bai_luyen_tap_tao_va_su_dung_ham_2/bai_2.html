@@ -6,7 +6,17 @@
 </head>
 <body>
 <script>
-
+   let D = prompt("Nhập đường kính hình tròn");
+   dienTich(D);
+   chuVi(D);
+   function dienTich(D) {
+       let S = (D * D / 4) * 3.14
+       alert('Diện tích của hình tròn có đường kính ' + D + ' là ' + S);
+   }
+   function chuVi(D) {
+       let C = D * 3.14
+       alert('Chu vi của hình tròn có đường kính ' + D + ' là ' + C);
+   }
 </script>
 </body>
 </html>
