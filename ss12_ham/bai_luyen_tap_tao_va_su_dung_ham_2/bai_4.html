@@ -6,15 +6,14 @@
 </head>
 <body>
 <script>
+    // console.log(typeof 2);
     let a = prompt("Nhập ký tự vào");
+    let result = false;
     kiemTra(a);
+
     function kiemTra(a) {
-        let result = false;
-        for (let i = 0; i < a; i++) {
-            if (a = typeof(a)) {
-                result = true;
-                break;
-            }
+        if (typeof a === typeof 2) {
+            result = true;
         }
         alert(result);
     }
