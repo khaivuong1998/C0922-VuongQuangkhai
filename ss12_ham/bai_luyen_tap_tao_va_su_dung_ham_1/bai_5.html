@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    let inputString = prompt("Nhập vào tên ngôi sao");
+
+    function kiemTra(find) {
+        let check1 = true;
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr1[i] === find) {
+                alert(arr2[i]);
+                check1 = true;
+                break;
+            } else {
+                check1 = false;
+            }
+        }
+        if (check1 === false) {
+            alert("Ngôi sao không hợp lệ");
+        }
+    }
+
+    kiemTra(inputString)
+</script>
+</body>
+</html>
