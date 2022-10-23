@@ -6,8 +6,10 @@
 </head>
 <body>
 <script>
-    let ketQua = soSanh(+prompt('Nhập vào số a'), +prompt('Nhập vào số b'));
-    alert(ketQua)
+    let a = +prompt('Nhập vào số a');
+    let b = +prompt('Nhập vào số b');
+    let kQ = soSanh(a,b);
+    alert(kQ);
     function soSanh(a,b) {
         let ketQua ;
         if (a>b) {
@@ -15,7 +17,7 @@
         } else {
             ketQua = +(a + b) ;
         }
-        return ketQua
+        return ketQua;
     }
 </script>
 </body>

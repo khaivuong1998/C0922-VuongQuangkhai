@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class ChuyenDoiNhietDo {
+        constructor(c) {
+            this.c = c;
+        }
+
+        switchF() {
+            return this.c * 1.8 + 32;
+        }
+
+        switchK() {
+            return this.c + 273.15;
+        }
+    }
+
+    let c = parseFloat(prompt("Nhập nhiệt độ hiện tại "));
+
+    while (c < -273) {
+        alert("Nhiệt độ đã nhập không hợp lệ");
+        c = parseFloat(prompt("Nhập nhiệt độ hiện tại  "));
+    }
+    let temperatureC = new ChuyenDoiNhietDo(c);
+    document.write("Nhiệt độ F: " + temperatureC.switchF() + "<br>");
+    document.write("Nhiệt độ K: " + temperatureC.switchK());
+</script>
+</body>
+</html>
