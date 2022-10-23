@@ -5,6 +5,31 @@
     <title>Title</title>
 </head>
 <body>
+<canvas id="draw" height="500px" width="800px" style="border: 1px darkblue  " ></canvas>
+<script>
+    class Rectangle {
+        constructor(width,height) {
+            this.width = width;
+            this.height = height;
+        }
+        getPerimeter(){
+            return  (this.width + this.height ) * 2 ;
+        }
+        getArea(){
+            return  this.width * this.height ;
+        }
+        draw() {
+            let ctx = document.getElementById('draw').getContext("2d");
+            ctx.beginPath();
+            ctx.rect(100,200,this.width,this.height) ;
+            ctx.stroke();
+        }
 
+    }
+    let rectangle1 = new Rectangle();
+    rectangle1.width = + prompt("nhập vào chiều dài");
+    rectangle1.height= + prompt("nhập vào chiều rộng");
+    rectangle1.draw();
+</script>
 </body>
 </html>
