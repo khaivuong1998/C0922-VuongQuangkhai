@@ -8,14 +8,15 @@
 
 </body>
 <script>
-    let canNang= prompt("nhập số cân nặng");
-    let chieuCao= prompt("nhập số chiều cao");
-    let bmi= canNang / (chieuCao ^ 2);
-    if (bmi<18.5) {
+    let canNang = prompt("Nhập cân nặng");
+    let chieuCao = prompt("Nhập chiều cao");
+    let bmi = canNang / (chieuCao * chieuCao);
+    alert(bmi);
+    if (bmi < 18.5) {
         alert("Underweight");
-    } else if (18.5<=bmi<25.0) {
+    } else if (bmi >= 18.5 && bmi < 25.0) {
         alert('Normal')
-    } else if (25.0<=bmi<30.0) {
+    } else if (bmi >= 25.0 && bmi < 30.0) {
         alert('Overweight')
     } else {
         alert('Obese')

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = prompt("nhập độ dài: ");
+    let arr = [];
+    let tong = 0;
+    let demGiaTri = 0;
+    let gttb;
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt("Nhập số nguyên bất kỳ " + i);
+        tong = tong + arr[i];
+    }
+    gttb = tong / n;
+    document.write(arr + "<br>");
+    document.write(tong + "<br>");
+    parseInt(document.write(gttb + "<br>"));
+    for (let j = 0; j < n; j++) {
+        if (gttb === arr[j]) {
+            demGiaTri += 1
+        }
+    }
+    document.write(demGiaTri)
+
+</script>
+</body>
+</html>

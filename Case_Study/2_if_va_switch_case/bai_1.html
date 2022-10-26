@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="wage" placeholder="nhập lương nhân viên">
+<button onclick="kiemTra()">Kiểm tra</button>
+<p id="tinh"></p>
+</body>
+<script>
+    function kiemTra() {
+        let luong = document.getElementById("wage").value;
+        let luongThucNhan;
+        if (luong >= 15000000) {
+            luongThucNhan = luong / 100 * 80;
+            document.write("Lương thực nhận là " + luongThucNhan + "Vnd");
+        } else if (luong >= 7000000 && luong < 15000000) {
+            luongThucNhan = luong / 100 * 90;
+            document.write("Lương thực nhận là " + luongThucNhan + "Vnd");
+        } else {
+            luongThucNhan = luong / 100 * 95;
+            document.write("Lương thực nhận là " + luongThucNhan + "Vnd");
+        }
+    }
+</script>
+</html>

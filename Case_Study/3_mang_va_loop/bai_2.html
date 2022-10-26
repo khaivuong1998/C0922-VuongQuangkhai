@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1 = [0,5,7,23,6,9];
+    let arr2 = [0,4,7,18,6,10,9,17];
+    let arr3 = [];
+    let kiemTra = false;
+    let kiemTra1 = false;
+    for (let i = 0; i < arr2.length; i++) {
+        for (let j = 0; j < arr1.length; j++) {
+            kiemTra = false;
+            if (arr2[i] === arr1[j]) {
+                arr1.splice(j,0);
+                console.log(arr1.length);
+                kiemTra = true;
+                break;
+            }
+          }
+        if (kiemTra = false){
+            for (let l = 0; l < arr3.length;l++) {
+                if (arr2[i] === arr3[l]) {
+                    kiemTra1 = true;
+                }
+            }
+            if (kiemTra1 = false) {
+                arr3.push(arr2[i]);
+            }
+        }
+        }
+    if (arr3.length > 0) {
+        document.write(arr3.join(','));
+    } else {
+        document.write("Các phần tử trong mảng 2 đều xuất hiện trong mảng 1");
+    }
+</script>
+</body>
+</html>
