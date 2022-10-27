@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let m = prompt("Nhập độ dài mảng thứ 1");
+    let arr1 = [];
+    let n = prompt("Nhập độ dài mảng thứ 2");
+    let arr2 = [];
+    let count = 0;
+    for (let i = 0; i < m; i++) {
+        arr1[i] = prompt("Nhập phần tử thứ " + i + " của mảng 1");
+    }
+    for (let i = 0; i < n; i++) {
+        arr2[i] = prompt("Nhập phần tử thứ " + i + " của mảng 2");
+    }
+    tinhTongChan(arr1, arr2);
+
+    function tinhTongChan(arr1, arr2) {
+        let arr3 = [arr1, arr2];
+        document.write(arr1 + "<br>" + arr2 + "<br>");
+        for (let i = 0; i < arr3.length; i++) {
+            for (let j = 0; j < arr3[i].length; j++) {
+                if (arr3[i][j] % 2 === 0) {
+                    count = count + arr3[i][j];
+                }
+            }
+        }
+        return document.write("Tổng của các số chẵn trong ma trận là: " + count);
+    }
+</script>
+</body>
+</html>
