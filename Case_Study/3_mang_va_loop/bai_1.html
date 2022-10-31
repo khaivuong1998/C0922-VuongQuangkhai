@@ -6,12 +6,25 @@
 </head>
 <body>
 <script>
-    let a = [1,2,3,4,5,6];
-    let b = [];
-    b[0] = a[0];
-    for (let i = 0; i < a.length - 1; i++) {
-        b[i + 1] = b[i] + a[i + 1];
-    } document.write(b.join(','));
+    let n = +prompt("Nhập độ dài mảng");
+    let arr1 = [];
+    let arr2 = [];
+    for (let i = 0; i < n; i++) {
+        arr1[i] = +prompt("Nhập chuỗi số nguyên " + i);
+    }
+    document.write(arr1 + "<br>");
+    arr2[0] = arr1[0];
+    for (let i = 0; i < arr1.length - 1; i++) {
+        arr2 [i + 1] = arr2[i] + arr1[i + 1];
+    }
+    document.write(arr2);
+
+    // let a = [1,2,3,4,5,6];
+    // let b = [];
+    // b[0] = a[0];
+    // for (let i = 0; i < a.length - 1; i++) {
+    //     b[i + 1] = b[i] + a[i + 1];
+    // } document.write(b);
 </script>
 </body>
 </html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let m = parseInt(prompt("Nhập số dòng"));
+    let n = parseInt(prompt("Nhập số cột"));
+    let arr1 = [];
+    let arr2 = [];
+
+    for (let i = 0; i < m; i++) {
+        arr1[i] = parseInt(prompt("Nhập phần tử của dòng"));
+    }
+
+    for (let i = 0; i < n; i++) {
+        arr2[i] = parseInt(prompt("Nhập phần tử của cột"));
+    }
+    numberPrime(arr1, arr2);
+
+    function numberPrime(arr1, arr2) {
+        let newArr = [arr1, arr2];
+        document.write(arr1 + "<br>" + arr2 + "<br>");
+        let count = 0;
+        let arr3 = [];
+
+        for (let i = 0; i < newArr.length; i++) {
+            for (let j = 0; j < newArr[i].length; j++) {
+                let check = true;
+                if (newArr[i][j] >= 2) {
+                    for (let k = 2; k < newArr[i][j]; k++) {
+                        if (newArr[i][j] % k === 0) {
+                            check = false;
+                            break;
+                        }
+                    }
+                } else check = false;
+                if (check === true) {
+                    if (arr3.indexOf(newArr[i][j]) === -1) {
+                        arr3.push(newArr[i][j]);
+                        count++;
+                    }
+                }
+            }
+        }
+        return document.write("Có " + count + " số nguyên tố có trong mảng 2 chiều gồm: " + arr3);
+    }
+</script>
+</body>
+</html>
