@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = prompt("Nhập chuỗi ký tự");
+    document.write(arr + "<br>");
+    kiemTra(arr)
+
+    function kiemTra(arr) {
+        let check = true;
+        let count = arr.length - 1;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === arr[(count - i)]) {
+                check = true;
+            } else if (arr[i] !== arr[(count - i)]) {
+                check = false;
+                break;
+            }
+        }
+        if (check) {
+            document.write("Chuỗi " + arr + " là chuỗi đối xứng");
+        } else {
+            document.write("Chuỗi " + arr + " là chuỗi không đối xứng");
+        }
+    }
+</script>
+</body>
+</html>

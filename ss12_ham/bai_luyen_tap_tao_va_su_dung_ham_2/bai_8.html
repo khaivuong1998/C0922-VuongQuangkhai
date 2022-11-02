@@ -6,12 +6,15 @@
 </head>
 <body>
 <script>
-    let a = prompt("Nhập chuỗi số nguyên");
+    let a = prompt("Nhập chuỗi bất kỳ");
+    let arr = a.split("");
+    document.write(arr + "<br>");
     daoNguoc(a);
+
     function daoNguoc(a) {
         let b = a.split("");
         b.reverse();
-        alert(b);
+        document.write(b);
     }
 </script>
 </body>

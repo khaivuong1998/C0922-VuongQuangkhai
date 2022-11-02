@@ -6,9 +6,11 @@
 </head>
 <body>
 <script>
-    for (let i = 0; i < 4; i++) {
-        for (let j = 0; j < 5; j++) {
-            if (i == 0 || j == 0 || i == 3 || j == 4) {
+    let a = prompt("Nhập chiều rộng");
+    let b = prompt("Nhập chiều dài");
+    for (let i = 0; i < a; i++) {
+        for (let j = 0; j < b; j++) {
+            if (i == 0 || j == 0 || i == a - 1 || j == b - 1) {
                 document.write("*");
             } else {
                 document.write("&nbsp;&nbsp");

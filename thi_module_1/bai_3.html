@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = prompt("Nhập độ dài mảng");
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt("Nhập số thứ " + i);
+    }
+    document.write(arr + "<br>");
+    numberPrime(arr);
+
+    function numberPrime(arr) {
+        let count = 0;
+        let arr1 = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] >= 2) {
+                for (let j = 1; j <= arr[i]; j++) {
+                    if (arr[i] % j === 0) {
+                        count++;
+                    }
+                }
+                if (count === 2) {
+                    arr1.push(arr[i]);
+                }
+            }
+            count = 0;
+        }
+        return document.write("Các số nguyên tố có trong mảng: " + arr1);
+    }
+
+    sapXep(arr1);
+
+    function sapXep(a, b) {
+        return a - b;
+    }
+
+    document.write(arr1.sort(sapXep));
+</script>
+</body>
+</html>
